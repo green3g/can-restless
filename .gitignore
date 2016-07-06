@@ -1,8 +1,9 @@
 # Dependency directory
-node_modules/
+node_modules/*
+!node_modules/testee
+!node_modules/steal-qunit
 
 #docs and build output
-dist/
-docs/
+
 
 .directory
