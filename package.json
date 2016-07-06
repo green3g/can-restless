@@ -22,7 +22,6 @@
     "documentjs": "^0.4.x",
     "jshint": "latest",
     "npm-watch": "^0.1.x",
-    "steal-qunit": "^0.1.x",
     "steal-tools": "^0.16.x",
     "testee": "^0.2.x"
   },
@@ -46,11 +45,6 @@
     "shim": {
       "jquery": {
         "exports": "jQuery"
-      },
-      "bootstrap": {
-        "deps": [
-          "jquery"
-        ]
       }
     }
   }

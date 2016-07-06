@@ -20,6 +20,23 @@ A client data model for interacting with data from [`flask-restless`](https://gi
 npm install can-restless --save
 ```
 
+### AMD
+
+```javascript
+require(['can-restless/dist/amd/index'], function(Factory){
+  var connection = Factory(/* ... */);
+});
+```
+
+### Require JS
+
+```javascript
+var Factory = require('can-restless/dist/cjs/index');
+var connection = Factory(/* .... */);
+```
+
+### StealJS - ES6 Style Example
+
 ```javascript
 import Factory from 'can-restless';
 import CanMap from 'can/map/';
