@@ -18,6 +18,7 @@ A client data model for interacting with data from [`flask-restless`](https://gi
 
 ```
 npm install can-restless --save
+npm run export
 ```
 
 ### AMD
