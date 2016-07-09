@@ -13,7 +13,7 @@
     log.appendChild(el);
   }
 
-  let connection = new Factory({
+  let Person = Factory({
     name: 'person',
     url: 'http://localhost:5000/api/person',
     map: CanMap.extend({
@@ -23,19 +23,19 @@
   });
 
   //save some data
-  let jeff = new connection.Map({
+  let jeff = new Person.Map({
     name: 'Jeffry Doe',
     birth_date: new Date()
   });
 
-  connection.save(jeff).then(data => {
+  Person.save(jeff).then(data => {
 
     logger('-------------data saved -----------');
     logger('person ' + data.name + ' saved with id ' + data.id);
     logger('-----------------------------------');
 
     //read the data
-    connection.getList({}).then(data => {
+    Person.getList({}).then(data => {
 
 
       data.forEach(item => {
@@ -45,7 +45,7 @@
 
 
       //delete the data
-      //connection.destroy(jeff).then(data => {
+      //Person.destroy(jeff).then(data => {
       //console.log('--------------- data deleted -----------------------');
       //console.log(data);
       //});
