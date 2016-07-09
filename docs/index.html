@@ -88,6 +88,42 @@
 		
 			
 				
+				
+				<li class="search-container">
+					<a class="module" href="can-restless.FilterMap.html" data-search="can-restless.FilterMap">
+						FilterMap
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="module" href="can-restless__lib__CanRestless.ParameterMap.html" data-search="ParameterMap">
+						ParameterMap
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
+				
+				<li class="search-container">
+					<a class="module" href="can-restless__lib__CanRestless.SortMap.html" data-search="SortMap">
+						SortMap
+					</a>
+				</li>
+				
+			
+			
+		
+			
+				
 					<li class="heading search-container">
 						<span>Type Definitions</span>
 						
@@ -195,13 +231,112 @@
 
 		
 		<section class="comment">
-			<h2>can-restless</h2>
-<p>A client data model for interacting with data from <a href="https://github.com/jfinkels/flask-restless"><code>flask-restless</code></a></p>
-<h2>Features</h2>
+			<h1>can-restless</h1>
+<p>A client data model for interacting with data from <a href="https://github.com/jfinkels/flask-restless"><code>flask-restless</code></a>
+Note: Can-restless has been built to work with the JSON API specification that
+flask-restless is currently developing. To utilize this package, the development version 1.0.0b should be used.</p>
+<h1>Features</h1>
 <ul>
 <li>Full crud api for retrieving, updating, and deleting data</li>
 <li>Retrieve lists of data with filtering, pagination, and sorting</li>
 <li>Pure data model, quickly build your own user interface, or use <a href="https://github.com/roemhildtg/can-crud-app">can-crud</a></li>
+</ul>
+<h1>Quick Start</h1>
+<pre><code>#install flask-restless from github:
+virtualenv env
+source env/bin/activate
+pip install -e git://github.com/jfinkels/flask-restless.git#egg=flask-restless
+
+#install can-restless
+npm install can-restless --save
+npm run export
+</code></pre>
+<h2>AMD</h2>
+<pre><code class="language-javascript">require(['can-restless/dist/amd/index'], function(Factory){
+  var Task = Factory(/* ... */);
+});
+</code></pre>
+<h2>Require JS</h2>
+<pre><code class="language-javascript">var Factory = require('can-restless/dist/cjs/index');
+var Task = Factory(/* .... */);
+</code></pre>
+<h2>StealJS - ES6 Style Example</h2>
+<pre><code class="language-javascript">import Factory from 'can-restless';
+import CanMap from 'can/map/';
+
+let TaskMap = CanMap.extend({
+  name: 'My Task',
+  description: 'More details about the task'
+  is_complete: false,
+});
+
+let Task = Factory({
+  map: TaskMap,
+
+  //this is the default id property
+  //idProp: 'id',
+  name: 'task',
+  url: '/api/tasks'
+});
+
+//fetch the list with no parameters
+let deferred = Task.getList({});
+
+//fetch the list with sorting
+deferred = Task.getList({
+  sort: {
+    type: 'asc',
+    fieldName: 'description'
+  }
+});
+
+//fetch the list with a filter
+deferred = Task.getList({
+  filters: [{
+    name: 'description',
+    operator: 'like',
+    value: '%details%'
+  }]
+});
+
+//fetch one item by id
+deferred = Task.get({
+  id: 1
+});
+</code></pre>
+<h1>Running the tests</h1>
+<p>Set up flask restless:</p>
+<pre><code>cd test/demo
+virtualenv env
+source env/bin/activate
+pip install -r pip_require.txt
+python run.py
+</code></pre>
+<p>Once the development server is running, run the tests either in a browser at <code>index.html</code> or by running</p>
+<pre><code>npm run test
+</code></pre>
+<h1>Limitations</h1>
+<p><strong>Filtering</strong>:</p>
+<p>Currently the only filter syntax supported is the array type with <code>name</code>, <code>op</code>, and <code>val</code>. Each filter in the array will be &quot;and&quot;. Or is not currently implemented. For example:</p>
+<pre><code>deferred = Task.getList({
+  filters: [{
+    name: 'description',
+    operator: 'like',
+    value: '%details%'
+  }, {
+    name: 'birth_date',
+    operator: 'after',
+    value: '10/5/2005'
+  }]
+});
+</code></pre>
+<p>Will query person where name contains &quot;details&quot; AND where birth_date is after October 5, 2005.</p>
+<h1>Contributing</h1>
+<p>Contributions from anyone are welcome!</p>
+<ul>
+<li>Pull Requests</li>
+<li>Report Issues via the issue tracker on github</li>
+<li>Feedback and Code Reviews</li>
 </ul>
 
 		</section>
@@ -232,7 +367,7 @@
 	
 
 	<script type="text/javascript">
-		var docObject = {"type":"page","name":"can-restless","src":"README.md","description":"<!--\n-->","title":"Home","static":"/home/gregg/public_html/can-flask-restless/guides/site/static","templates":"/home/gregg/public_html/can-flask-restless/guides/site/templates","glob":{"ignore":"{docs,dist,node_modules}/**/*","pattern":"**/*.{md,js}","cwd":"/home/gregg/public_html/can-flask-restless"},"dest":"/home/gregg/public_html/can-flask-restless/docs","watch":true,"debug":true,"generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
+		var docObject = {"type":"page","name":"can-restless","src":"README.md","description":"<!--\n-->","title":"Home","static":"/home/gregg/public_html/can-restless/can-restless.git/guides/site/static","templates":"/home/gregg/public_html/can-restless/can-restless.git/guides/site/templates","glob":{"ignore":"{docs,dist,node_modules}/**/*","pattern":"**/*.{md,js}","cwd":"/home/gregg/public_html/can-restless/can-restless.git"},"dest":"/home/gregg/public_html/can-restless/can-restless.git/docs","watch":true,"debug":true,"generators":["html"],"docConfigDest":"../documentjs.json","project":{}};
 	</script>
 
 	
