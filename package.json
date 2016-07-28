@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "description": "can-connect client for Flask-Restless",
   "repository": "https://github.com/roemhildtg/can-restless",
+  "main": "index.js",
   "watch": {
     "lint": "**/*.js",
     "test": "**/*.js"
@@ -30,23 +31,5 @@
     "can": "^2.3.x",
     "can-connect": "^0.5.x",
     "can-set": "^0.5.x"
-  },
-  "main": "index",
-  "system": {
-    "bundle": [
-      "index"
-    ],
-    "npmIgnore": [
-      "documentjs",
-      "jshint",
-      "steal-tools",
-      "testee",
-      "npm-watch"
-    ],
-    "shim": {
-      "jquery": {
-        "exports": "jQuery"
-      }
-    }
   }
 }
