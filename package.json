@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "can": "^2.3.27",
-    "can-connect": "^0.5.x",
+    "can-connect": "^0.6.0",
     "can-set": "^0.5.x"
   }
 }
