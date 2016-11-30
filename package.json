@@ -22,7 +22,7 @@
   "devDependencies": {
     "documentjs": "^0.4.x",
     "jshint": "latest",
-    "npm-watch": "^0.1.x",
+    "npm-watch": "^0.1.6",
     "steal-qunit": "^0.1.4",
     "steal-tools": "^0.16.x",
     "testee": "^0.2.x"
