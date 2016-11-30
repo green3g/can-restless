@@ -30,6 +30,6 @@
   "dependencies": {
     "can": "^2.3.27",
     "can-connect": "^1.0.14",
-    "can-set": "^0.5.x"
+    "can-set": "^1.0.1"
   }
 }
