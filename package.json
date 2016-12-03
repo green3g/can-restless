@@ -28,7 +28,7 @@
     "testee": "^0.2.x"
   },
   "dependencies": {
-    "can": "^2.3.27",
+    "can": "^3.2.1",
     "can-connect": "^1.0.14",
     "can-set": "^0.5.x"
   }
