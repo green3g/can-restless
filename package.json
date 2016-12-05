@@ -22,7 +22,7 @@
   "devDependencies": {
     "babel-eslint": "^7.1.0",
     "documentjs": "^0.4.4",
-    "eslint": "^3.9.0",
+    "eslint": "^3.9.1",
     "npm-watch": "^0.1.6",
     "steal": "^0.16.41",
     "steal-qunit": "^0.1.4",
@@ -30,10 +30,10 @@
     "testee": "^0.3.0-pre.2"
   },
   "dependencies": {
-    "can-connect": "^1.0.4",
-    "can-define": "^1.0.1",
+    "can-connect": "^1.0.14",
+    "can-define": "^1.0.4",
     "can-event": "^3.0.1",
-    "can-set": "^1.0.1",
-    "can-util": "^3.0.3"
+    "can-set": "^1.0.2",
+    "can-util": "^3.0.13"
   }
 }
