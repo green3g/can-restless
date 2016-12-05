@@ -45,7 +45,7 @@ fixture({
     },
     'POST /tasks' (params, response) {
         const newId = data[data.length - 1].id + 1;
-        data.push(can.extend({
+        data.push(Object.assign({
             id: newId
         }, params.data));
         response(data[data.length - 1]);
@@ -66,7 +66,7 @@ fixture({
         })[0];
         const index = data.indexOf(item);
         if (index !== -1) {
-            data[index] = can.extend(item, params.data);
+            data[index] = Object.assign(item, params.data);
             response(data);
         } else {
             response(404, 'Not Found');
