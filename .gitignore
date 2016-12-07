@@ -7,3 +7,5 @@ docs/
 
 .directory
 env/
+
+*.log
