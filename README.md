@@ -12,7 +12,7 @@ flask-restless is currently developing. To utilize this package, the development
 # Features
 - Full crud api for retrieving, updating, and deleting data
 - Retrieve lists of data with filtering, pagination, and sorting
-- Pure data model, quickly build your own user interface, or use [can-crud](https://github.com/roemhildtg/can-crud-app)
+- Pure data model, quickly build your own user interface, or use [can-crud](https://github.com/roemhildtg/can-admin-app)
 
 # Quick Start
 
