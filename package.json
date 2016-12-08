@@ -30,7 +30,7 @@
     "testee": "^0.3.0-pre.2"
   },
   "dependencies": {
-    "can-connect": "^1.0.14",
+    "can-connect": "^1.0.15",
     "can-define": "^1.0.4",
     "can-event": "^3.0.1",
     "can-set": "^1.0.2",
