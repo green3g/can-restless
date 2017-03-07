@@ -1,6 +1,6 @@
 {
   "name": "can-restless",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "can-connect client for Flask-Restless",
   "repository": "https://github.com/roemhildtg/can-restless",
   "main": "index.js",
