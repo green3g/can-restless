@@ -21,7 +21,7 @@
     "lint": "eslint . --fix",
     "preversion": "npm run lint",
     "postversion": "npm run export && npm publish && git push origin master && git push --tags && npm run changelog",
-    "changelog": "changelog spectre-canjs all > CHANGELOG.md && git add . && git commit . -m changelog && git push origin master"
+    "changelog": "changelog can-restless all > CHANGELOG.md && git add . && git commit . -m changelog && git push origin master"
   },
   "author": "roemhildtg",
   "license": "MIT",

@@ -1,182 +1,135 @@
-0.24.2 / 2017-03-07
-===================
+0.8.0 / 2017-03-07
+==================
 
-  * 0.24.2
-  * Merge remote-tracking branch 'origin/greenkeeper/eslint-3.17.1'
-  * Merge remote-tracking branch 'origin/greenkeeper/can-stache-3.0.20'
-  * TEST: use older firefox in travis build
-  * chore(package): update can-stache to version 3.0.20
+  * 0.8.0
+  * lint
+  * remove extra files
+  * update build/deps
+  * 0.7.1
+
+0.7.0 / 2017-03-07
+==================
+
+  * 0.7.0
+  * minor test fixes
+  * allow filters with 0 or false to be serialized
+  * cleanup
+  * Merge branch 'canjs-3.0'
+  * lint
+  * Merge pull request [#45](https://github.com/roemhildtg/can-restless/issues/45) from roemhildtg/greenkeeper-can-connect-1.0.19
+    can-connect@1.0.19 untested ⚠️
+  * chore(package): update can-connect to version 1.0.19
     https://greenkeeper.io/
-  * chore(package): update eslint to version 3.17.1
+  * Merge pull request [#44](https://github.com/roemhildtg/can-restless/issues/44) from roemhildtg/greenkeeper-can-util-3.2.0
+    can-util@3.2.0 untested ⚠️
+  * chore(package): update can-util to version 3.2.0
     https://greenkeeper.io/
-  * DOCS: fix minor typos in demos
-  * get rid of 0 padding
-  * add javascript source code to demo viewer
-  * Merge pull request [#19](https://github.com/roemhildtg/spectre-canjs/issues/19) from roemhildtg/greenkeeper/eslint-3.14.0
-    chore(package): update eslint to version 3.14.0
-  * changelog
+  * Merge pull request [#43](https://github.com/roemhildtg/can-restless/issues/43) from roemhildtg/greenkeeper-can-define-1.0.8
+    can-define@1.0.8 untested ⚠️
+  * chore(package): update can-define to version 1.0.8
+    https://greenkeeper.io/
+  * Merge pull request [#40](https://github.com/roemhildtg/can-restless/issues/40) from roemhildtg/greenkeeper-eslint-3.12.1
+    eslint@3.12.1 untested ⚠️
+  * chore(package): update eslint to version 3.12.1
+    https://greenkeeper.io/
+  * Merge pull request [#39](https://github.com/roemhildtg/can-restless/issues/39) from roemhildtg/greenkeeper-eslint-3.12.0
+    eslint@3.12.0 untested ⚠️
+  * chore(package): update eslint to version 3.12.0
+    https://greenkeeper.io/
+  * Merge pull request [#38](https://github.com/roemhildtg/can-restless/issues/38) from roemhildtg/greenkeeper-testee-0.3.0
+    testee@0.3.0 untested ⚠️
+  * chore(package): update testee to version 0.3.0
+    https://greenkeeper.io/
+  * Merge pull request [#37](https://github.com/roemhildtg/can-restless/issues/37) from roemhildtg/greenkeeper-can-connect-1.0.15
+    can-connect@1.0.15 untested ⚠️
+  * chore(package): update can-connect to version 1.0.15
+    https://greenkeeper.io/
+  * remove extra imports and console
+  * Merge pull request [#36](https://github.com/roemhildtg/can-restless/issues/36) from roemhildtg/canjs-3.0
+    Canjs 3.0
+  * 0.6.1
+  * Merge remote-tracking branch 'origin/master' into canjs-3.0
+    # Conflicts:
+    #    package.json
 
-0.24.1 / 2017-03-01
-===================
+0.6.0 / 2016-12-07
+==================
 
-  * 0.24.1
-  * FIX: prevent page navigation when quick filter is selected
+  * 0.6.0
+  * don't serialize filters if they don't have a value
 
-0.24.0 / 2017-03-01
-===================
+0.5.1 / 2016-12-05
+==================
 
-  * 0.24.0
-  * ENH: add github style quick filter capabilities to data-admin
-    - update and fix docs
-    - use dropdown-menu for filter-widget
-  * DOCS: field documentation fixes
+  * 0.5.1
+  * adds jquery ajax dep
+  * working on tests...
+  * remove console.logs
 
-0.23.2 / 2017-02-28
-===================
+0.5.0 / 2016-12-05
+==================
 
-  * 0.23.2
-  * ENH: use right positioned dropdown on manage items detail view
-  * ENH: add right positioning option to dropdowns
-  * fix(package): update spectre.css to version 0.2.3
-    Closes [#17](https://github.com/roemhildtg/spectre-canjs/issues/17)
+  * 0.5.0
+  * 0.4.0
+  * updates dependency
+  * Merge pull request [#33](https://github.com/roemhildtg/can-restless/issues/33) from roemhildtg/greenkeeper-can-connect-1.0.14
+    can-connect@1.0.14 untested ⚠️
+  * chore(package): update can-connect to version 1.0.14
+    https://greenkeeper.io/
+  * Merge pull request [#29](https://github.com/roemhildtg/can-restless/issues/29) from roemhildtg/greenkeeper-can-connect-1.0.12
+    Update can-connect to version 1.0.12 🚀
+  * chore(package): update can-connect to version 1.0.12
+    https://greenkeeper.io/
+  * switch to basemap to avoid "combine-requests"
+    - fix typo with params
+  * Switch to using jquery ajax
+  * WIP on master: 66973ca add npmignore
+  * index on master: 66973ca add npmignore
+  * update to can3.0 initial commit
+  * Merge pull request [#10](https://github.com/roemhildtg/can-restless/issues/10) from roemhildtg/greenkeeper-steal-qunit-0.1.4
+    steal-qunit@0.1.4 untested ⚠️
+  * chore(package): update steal-qunit to version 0.1.4
+    https://greenkeeper.io/
+  * Merge pull request [#7](https://github.com/roemhildtg/can-restless/issues/7) from roemhildtg/greenkeeper-can-2.3.27
+    can@2.3.27 untested ⚠️
+  * chore(package): update can to version 2.3.27
     https://greenkeeper.io/
 
-0.23.1 / 2017-02-15
-===================
+0.3.1 / 2016-09-15
+==================
 
-  * 0.23.1
-  * TEST: data-admin - new relatedField/relatedValue setters
-  * ENH: add show/hide events to modal dialog
-  * FIX: subform-field include missing css
-  * ENH: list-table don't show buttons if none exist
-  * DOCS: fix view function typos
-  * FIX: data-admin - related view titles
-  * ENH: data-admin hide edit/details tabs if not selected
-  * ENH: data-admin - move init code into relatedField setter
-  * CHANGELOG
+  * add npmignore
+  * 0.3.1
 
-0.23.0 / 2017-02-09
-===================
+0.4.0 / 2016-07-28
+==================
 
-  * 0.23.0
-  * CHG: rename all `disableAdd` properties to `disableCreate` to fix discrepancies across application
-  * FIX: dont show details and edit tabs until there is an item to be edited/viewed
-  * ENH: data-admin: organize related tables in nav-containers on details view
-  * changelog
+  * Update package.json
+  * Update index.js
 
-0.22.5 / 2017-02-09
-===================
+0.3.0 / 2016-07-09
+==================
 
-  * 0.22.5
-  * ENH: generate fields from inherited DefineMaps
-  * FIX: subform - serialize subform object before dispatching event
+  * 0.3.0
+  * Add flask to travis build
+  * Tests
+  * ignore virtualenv
+  * Merge pull request [#1](https://github.com/roemhildtg/can-restless/issues/1) from roemhildtg/fix-filter-serialization
+    Fixes minor bug in the way that filters were being serialized
+    Rename `metadata.totalItems` to metadata.total`
+  * Fixes minor typo where operator serializers were not being called
+  * rename metadata property to total
+  * Fixes minor bug in the way that filters were being serialized
 
-0.22.4 / 2017-02-07
-===================
+0.2.0 / 2016-07-06
+==================
 
-  * 0.22.4
-  * Cleanup: rename test file
-  * FIX: subform-field remove type 'string' and serialize objects if available
-  * FIX: add fieldset border to subform-field
-  * changelog
+  * add build instructions
+  * 0.2.0
+  * docs and demo
+  * Update docs and rename modules
 
-0.22.3 / 2017-02-01
-===================
+0.1.0 / 2016-07-05
+==================
 
-  * 0.22.3
-  * ENH: json-field format fieldsets that were removed in https://github.com/picturepan2/spectre/pull/136
-  * changelog
-
-0.22.2 / 2017-01-31
-===================
-
-  * 0.22.2
-  * FIX:dropdown-menu - preventDefault on mouse click primaryButtons
-  * changelog
-
-0.22.1 / 2017-01-31
-===================
-
-  * 0.22.1
-  * DOCS: add primaryButtons to list-table demo
-  * FIX: make dropdown primary button clicks return false to prevent setting hash
-  * changelog
-
-0.22.0 / 2017-01-28
-===================
-
-  * 0.22.0
-  * FIX: fix failing tests related to primaryButton changes
-  * CHG: `primaryButton` changed to array of type button, `primaryButtons`
-    - allow for more flexibility in dropdown-menu, list-table, and data-admin
-  * CHG: list-table buttons now appear as a menu
-    -  In addition, primaryButton can appear beside the menu dropdown
-    - adds primaryButton to data-admin, list-table, and dropdown-menu
-  * ENH: adds checkbox template to field factory
-  * CHG: use common 'text' property for all button objects between different components
-    - more common names between properties
-    - includes breaking change for list-table, change button 'title' to 'text'
-  * changelog
-
-0.21.4 / 2017-01-26
-===================
-
-  * 0.21.4
-  * DOCS: add docs for checkbox field
-  * Merge remote-tracking branch 'origin/master'
-  * ENH: add new checkbox field
-  * ENH: add subform field as replacement for json-field
-    - subform to replace json-field as it doesn't automatically convert obj to json
-    - obj can be serialized to json easily before sending to server using defineMap's serialize
-  * DOCS:minor layout fixes
-  * DOCS: force push gh-pages branch
-  * Finish documenting data-admin
-  * DOCS: template tweaks and updates
-  * add custom template theme using spectre.css
-  * chore(package): update eslint to version 3.14.0
-    https://greenkeeper.io/
-  * FIX: json-field existing json values passed correctly
-  * changelog
-
-0.21.3 / 2017-01-20
-===================
-
-  * 0.21.3
-  * TEST: data-admin updateParameters
-  * FIX: fixes breaking app when existing filters are on the view and new filters are added
-  * DOCS: make sure entire docs directory gets committed
-  * DOCS: fix link
-  * DOCS: add badge for npm
-  * changelog
-
-0.21.2 / 2017-01-19
-===================
-
-  * 0.21.2
-  * BUILD: remove uneeded build step
-  * FIX: json-field - fix failing tests
-  * FIX: remove extra property
-  * FIX: json-field serialization and form object creation works much better
-  * Merge pull request [#16](https://github.com/roemhildtg/spectre-canjs/issues/16) from roemhildtg/greenkeeper/steal-1.0.11
-    chore(package): update steal to version 1.0.11
-  * chore(package): update steal to version 1.0.11
-    https://greenkeeper.io/
-  * changelog
-
-0.21.1 / 2017-01-17
-===================
-
-  * 0.21.1
-  * FIX: Update and fix issues caused by event and object changes
-  * changelog
-
-0.21.0 / 2017-01-17
-===================
-
-  * 0.21.0
-  * FIX: set default value of properties to DefineMap to solve issues from d931a88b3c9a2bf1c43d6f671ccba953a9642c3e
-  * DOCS: fix documentation onFieldChangeEventObject
-  * CHG: field `fieldchange` events conform to the same type of event that the form widget dispatches
-  * FIX: update event name to fieldchange
-  * DOCS: add missing event and update validation docs
-  * changelog
+  * init
