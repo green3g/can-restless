@@ -20,9 +20,9 @@
   "author": "roemhildtg",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
+    "babel-eslint": "^7.1.1",
     "documentjs": "^0.4.4",
-    "eslint": "^3.12.1",
+    "eslint": "^3.17.1",
     "npm-watch": "^0.1.6",
     "steal": "^0.16.41",
     "steal-qunit": "^0.1.4",

@@ -6,7 +6,7 @@ from flask_cors import CORS
 # Create the Flask application and the Flask-SQLAlchemy object.
 app = flask.Flask(__name__)
 app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = flask.ext.sqlalchemy.SQLAlchemy(app)
 
 # Create your Flask-SQLALchemy models as usual but with the following two
@@ -35,4 +35,4 @@ manager.create_api(Person, methods=['GET', 'POST', 'DELETE'])
 CORS(app)
 
 # start the flask loop
-app.run()
+app.run(host='0.0.0.0')
