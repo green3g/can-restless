@@ -1,6 +1,6 @@
 {
   "name": "can-restless",
-  "version": "0.7.1",
+  "version": "0.7.0",
   "description": "can-connect client for Flask-Restless",
   "repository": "https://github.com/roemhildtg/can-restless",
   "main": "index.js",
@@ -9,25 +9,32 @@
     "test": "**/*.js"
   },
   "scripts": {
+    "pretest": "npm run lint",
     "test": "testee test/index.html --reporter Spec --browsers firefox",
     "build": "steal-tools",
     "watch": "npm-watch",
-    "docs": "documentjs --watch -d",
+    "docs": "documentjs -d -f",
+    "postdocs": "node docs-bundle",
+    "prepublish-docs": "git checkout gh-pages && git merge master",
+    "publish-docs": "npm run docs && git add docs -f && git commit -m docs && git push origin gh-pages -f && git checkout master",
     "export": "node build.js",
     "lint": "eslint . --fix",
-    "pretest": "npm run lint"
+    "preversion": "npm run lint",
+    "postversion": "npm run export && npm publish && git push origin master && git push --tags && npm run changelog",
+    "changelog": "changelog spectre-canjs all > CHANGELOG.md && git add . && git commit . -m changelog && git push origin master"
   },
   "author": "roemhildtg",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "changelog": "^1.0.7",
     "documentjs": "^0.4.4",
     "eslint": "^3.17.1",
     "npm-watch": "^0.1.6",
-    "steal": "^0.16.41",
-    "steal-qunit": "^0.1.4",
-    "steal-tools": "^0.16.8",
-    "testee": "^0.3.0"
+    "steal": "^1.2.11",
+    "steal-qunit": "^1.0.1",
+    "steal-tools": "^1.1.2",
+    "testee": "^0.3.1"
   },
   "dependencies": {
     "can-connect": "^1.0.19",
