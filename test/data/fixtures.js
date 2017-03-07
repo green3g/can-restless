@@ -28,13 +28,13 @@ fixture({
         if (sortInfo && sortInfo.fieldName) {
             const field = sortInfo.fieldName;
             tempData = tempData.sort((a, b) => {
-                return sortInfo.type === 'asc' ?
+                return sortInfo.type === 'asc'
           //if ascending
-          (a.attr(field) === b.attr(field) ? 0 :
-            a.attr(field) > b.attr(field) ? 1 : -1) :
+          ? (a.attr(field) === b.attr(field) ? 0
+            : a.attr(field) > b.attr(field) ? 1 : -1)
           //if descending
-          (a.attr(field) === b.attr(field) ? 0 :
-            a.attr(field) > b.attr(field) ? -1 : 1);
+          : (a.attr(field) === b.attr(field) ? 0
+            : a.attr(field) > b.attr(field) ? -1 : 1);
             });
         }
 
