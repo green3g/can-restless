@@ -15,8 +15,7 @@ stealTools.export({
         '+global-js': {
             modules: ['can-restless/index'],
             ignore: false
-        },
-        '+global-css': {}
+        }
     }
 }).catch(function (e) {
 
