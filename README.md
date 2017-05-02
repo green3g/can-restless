@@ -4,6 +4,8 @@
 -->
 
 # can-restless
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/roemhildtg/can-restless.svg)](https://greenkeeper.io/)
 A client data model for interacting with data from [`flask-restless`](https://github.com/jfinkels/flask-restless)
 Note: Can-restless has been built to work with the JSON API specification that
 flask-restless is currently developing. To utilize this package, the development version 1.0.0b should be used.
