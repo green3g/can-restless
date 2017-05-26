@@ -9,3 +9,5 @@ docs/
 env/
 
 *.log
+
+test/demo/test.db
