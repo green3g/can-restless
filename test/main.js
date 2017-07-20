@@ -1,2 +1,2 @@
 import '../lib/CanRestless.test';
-import '../lib/Params.test';
+import '../lib/behaviors/Params.test';
